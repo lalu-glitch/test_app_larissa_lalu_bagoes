@@ -22,11 +22,14 @@ Build a simple Flutter application that demonstrates your ability to structure c
 ## 🧩 API
 * https://fakestoreapi.com/products
 
-## ⏱️ Time Expectation
-* Estimated effort: **~3 hours**
-* Submission deadline: **within 24 hours after receiving this test**
+### ⏰ Time Limit Rules
+* The start time will be informed directly by the recruiter
+* Maximum duration: 3–5 hours
+**Rules:**
+* We will only evaluate the last commit made before the specified deadline
+* Any commits after the deadline will not be considered
+* Candidates are encouraged to commit their progress regularly during the test
 
-> We value code quality and structure more than feature completeness.
 
 ## 📤 Submission Guidelines
 1. Fork this repository (or clone and re-upload to your own repository)
