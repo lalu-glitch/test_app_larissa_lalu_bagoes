@@ -34,7 +34,7 @@ Build a simple Flutter application that demonstrates your ability to structure c
 ## 📤 Submission Guidelines
 1. Fork this repository (or clone and re-upload to your own repository)
 2. Complete the task
-3. Submit your solution via a **GitHub repository link**
+3. Submit your solution by sending your GitHub repository link to: picsfe23@gmail.com 
 
 ## 📄 README (Required)
 Please include a README in your submission that explains:
