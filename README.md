@@ -1,16 +1,56 @@
-# test_app
+# Flutter Technical Test - test_app
 
-A new Flutter project.
+## 📌 Objective
+Build a simple Flutter application that demonstrates your ability to structure code, manage state, and consume APIs.
 
-## Getting Started
+#### 📱 Requirements ####
+---------------------------------------------------------------------
 
-This project is a starting point for a Flutter application.
+### ✅ Required
+* Fetch product list from API
+* Display the product list in a scrollable view
+* Use state management (GetX or BLoC)
+* Apply clear separation of concerns:
+  * UI layer
+  * Logic layer
+  * Data layer
 
-A few resources to get you started if this is your first Flutter project:
+### ⭐ Optional
+* Proper error handling (user-friendly message / retry mechanism)
+* Reusable widgets (avoid duplicated UI code)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🧩 API
+* https://fakestoreapi.com/products
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ⏱️ Time Expectation
+* Estimated effort: **~3 hours**
+* Submission deadline: **within 24 hours after receiving this test**
+
+> We value code quality and structure more than feature completeness.
+
+## 📤 Submission Guidelines
+1. Fork this repository (or clone and re-upload to your own repository)
+2. Complete the task
+3. Submit your solution via a **GitHub repository link**
+
+## 📄 README (Required)
+Please include a README in your submission that explains:
+* How to run the project
+* Architecture / structure used
+* State management approach
+* Any assumptions or trade-offs
+
+## 🧠 Evaluation Criteria
+We will evaluate your submission based on:
+* Code structure and separation of concerns
+* State management implementation
+* Code readability and cleanliness
+* API handling and async logic
+* Overall approach and decision making
+
+## 📌 Notes
+* UI design does not need to be perfect; focus on structure and logic
+* Keep the solution simple and scalable
+* Avoid overengineering
+
+Good luck and happy coding 🚀
