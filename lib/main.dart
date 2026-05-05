@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/presentation/screens/products/product_list_screen.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-void main() {
+import 'core/di/injection_container.dart';
+import 'presentation/screens/products/cubit/products_cubit.dart';
+import 'presentation/screens/products/pages/product_list_screen.dart';
+
+void main() async {
+  await initDependency();
   runApp(const MyApp());
 }
 
@@ -10,10 +15,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Test App',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const ProductListScreen(),
+    return BlocProvider(
+      create: (context) => sl<ProductsCubit>(),
+      child: MaterialApp(
+        title: 'Flutter Test App',
+        theme: ThemeData(primarySwatch: Colors.blue),
+        home: const ProductListScreen(),
+      ),
     );
   }
 }
