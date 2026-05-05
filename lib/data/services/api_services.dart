@@ -34,6 +34,7 @@ class ApiService {
   Future<List<Product>> getProducts() async {
     try {
       final response = await _dio.get(ApiConstants.products);
+      print(response);
       if (response.statusCode == 200) {
         final List<dynamic> data = response.data;
         return data.map((json) => Product.fromJson(json)).toList();
