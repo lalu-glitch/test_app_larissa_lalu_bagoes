@@ -17,14 +17,6 @@ class ApiService {
           return handler.next(response);
         },
         onError: (DioException e, handler) async {
-          //sementara
-          if (e.response?.statusCode == 404) {
-            print('Not Found: ${e.requestOptions.path}');
-          } else if (e.response?.statusCode == 401) {
-            print('Unauthorized');
-          } else if (e.response?.statusCode == 500) {
-            print('Server Error');
-          }
           return handler.next(e);
         },
       ),
