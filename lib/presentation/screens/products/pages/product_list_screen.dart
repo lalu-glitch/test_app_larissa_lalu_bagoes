@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/widgets/widget_error.dart';
 import '../../../../data/models/product_model.dart';
 import '../cubit/products_cubit.dart';
 import '../widgets/widget_product_card.dart';
@@ -19,7 +20,7 @@ class ProductListScreen extends StatelessWidget {
       body: RefreshIndicator(
         onRefresh: () async => refresh(),
         child: Container(
-          color: Colors.amber,
+          color: Colors.white30,
           child: Padding(
             padding: .symmetric(horizontal: 8, vertical: 14),
             child: BlocBuilder<ProductsCubit, ProductsState>(
@@ -43,21 +44,10 @@ class ProductListScreen extends StatelessWidget {
                   return const Center(child: Text('Data tidak ada'));
                 }
                 if (state is ProductsError) {
-                  return Center(
-                    child: Column(
-                      mainAxisAlignment: .center,
-                      children: [
-                        Icon(Icons.error, color: Colors.red, weight: 150),
-                        Text(
-                          state.message,
-                          style: const TextStyle(color: Colors.red),
-                        ),
-                        ElevatedButton(
-                          onPressed: () async => refresh(),
-                          child: Text('refresh'),
-                        ),
-                      ],
-                    ),
+                  return WidgetError(
+                    message: state.message,
+                    callback: () async => refresh(),
+                    callbackMessageOnButton: 'Refresh',
                   );
                 }
                 return const SizedBox.shrink();
